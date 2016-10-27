@@ -1,0 +1,434 @@
+
+body{
+    font-family: "微软雅黑",'Lato',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+}
+/**背景*/
+#bg-image{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    top:0;
+    left: 0;
+    margin: 0;
+    background-size:cover ;
+}
+#bg-image img{
+    width: 100%;
+    height: 100%;
+}
+/*主题内容*/
+#main-page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -585px;
+}
+.container{
+    width: 1200px;
+}
+.left-bg{
+    background: #ff4343;
+    height:600px;
+}
+#profile-img {
+    width: 170px;
+    height: 170px;
+    border: 1px solid transparent;
+    border-radius: 85px;
+    background: #ff6f69;
+    margin: 30px auto 0;
+}
+#profile-img img {
+    display: block;
+    border-radius: 75px;
+    margin: 9px auto;
+    width: 150px;
+    height: 150px;
+}
+#profile-top{
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+#profile-mid {
+    padding-top: 15px;
+}
+#profile-mid p {
+    word-wrap: break-word;
+}
+#profile-top,#profile-mid,#profile-bot{
+    color:#ddd;
+}
+
+
+/***右**/
+.col-cmd-9{
+    width:75%;
+}
+#content{
+    height: 600px;
+}
+#content #content-resume{
+    width:88%;
+    background: #f4f4f4;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left:15px;
+    display: none;
+}
+#content #content-resume .content-container{
+    padding: 0 15px;
+}
+h3{
+    font-weight: normal;
+    color: #ff6f69;
+    height: 50px;
+    width: 100%;
+    padding-left: 100px;
+    border-bottom: 1px solid #ddd;
+    line-height: 35px;
+}
+#content #content-resume .content-container .content-item-01{
+    width: 100%;
+    height: 500px;
+}
+#content #content-resume .content-container .content-item-01 .resume{
+    float: left;
+    height: 100%;
+    width: 52%;
+}
+#content #content-resume .content-container .content-item-01 .resume span{
+    display: block;
+    font-size: 22px;
+    color:#ff6f69;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+#content #content-resume .content-container .content-item-01 .resume ul{
+    margin-top:20px;
+    font-size: 16px;
+}
+
+#content #content-resume .content-container .content-item-01 .resume ul li{
+    border-bottom: 1px solid #ddd;
+    margin-left: -40px;
+    margin-bottom: 15px;
+}
+
+#content #content-resume .content-container .content-item-01 .resume ul li i{
+    color:#ff4343;
+    font-weight: normal;
+
+}
+#content #content-resume .content-container .content-item-01 .resume ul li label {
+    width: 100px;
+    height: 100%;
+}
+
+#content #content-resume .content-container .content-item-01 .resume ul li label{
+    color:#ff4343;
+    font-weight: normal;
+}
+
+#content #content-resume .content-container .content-item-01 .crl{
+    margin-left: 15px;
+    float: left;
+    padding-top: 20px;
+}
+/*图标*/
+#content #content-side{
+    position: absolute;
+    top:0;
+    right: 0;
+    float: right;
+}
+#content #content-side ul li{
+    width: 76px;
+    height: 76px;
+    background: #ff4343;
+    border-top: 1px solid #bbb;
+    cursor: pointer;
+}
+#content #content-side ul .li-hover{
+    background: #fff;
+}
+#content #content-side ul li .div-hover{
+    color:#fff;
+    background: #ff4343;
+}
+
+#content #content-side ul li div{
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    background: #fff;
+    margin: 16px;
+    font-size: 24px;
+    color: #ff4343;
+    text-align: center;
+    line-height: 42px;
+}
+
+/*skill**/
+#content #content-skill{
+    width:88%;
+    background: #f4f4f4;
+    height: 600px;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left:15px;
+    display: none;
+}
+#content #content-skill .skill-container{
+    padding: 0 15px;
+}
+/*技能*/
+#content #content-skill .skill-container .skill{
+    width:46%;
+   /* height: 100%;*/
+    overflow: auto;
+    float: left;
+}
+#content #content-skill .skill-container .skill>span{
+    display: block;
+    font-size: 22px;
+    color:#ff4343;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-top: 30px;
+}
+#content #content-skill .skill-container .skill>div{
+    margin-top: 20px;
+}
+#content #content-skill .skill-container .skill .html,
+#content #content-skill .skill-container .skill .css,
+#content #content-skill .skill-container .skill .js,
+#content #content-skill .skill-container .skill .jq,
+#content #content-skill .skill-container .skill .less,
+#content #content-skill .skill-container .skill .bs,
+#content #content-skill .skill-container .skill .agl,
+#content #content-skill .skill-container .skill .jqm,
+#content #content-skill .skill-container .skill .ext,
+#content #content-skill .skill-container .skill .php,
+#content #content-skill .skill-container .skill .sql,
+#content #content-skill .skill-container .skill .http,
+#content #content-skill .skill-container .skill .storm,
+#content #content-skill .skill-container .skill .svn,
+#content #content-skill .skill-container .skill .ps,
+#content #content-skill .skill-container .skill .axu
+{
+    height: 24px;
+    background: #ff6f69;
+}
+#content #content-skill .skill-container .skill .html{
+    width: 94%;
+}
+#content #content-skill .skill-container .skill .css{
+    width: 96%;
+}
+#content #content-skill .skill-container .skill .js{
+    width: 90%;
+}
+#content #content-skill .skill-container .skill .less{
+    width: 85%;
+}
+#content #content-skill .skill-container .skill .jq{
+    width: 80%;
+}
+#content #content-skill .skill-container .skill .bs{
+    width: 65%;
+}
+#content #content-skill .skill-container .skill .agl{
+    width: 50%;
+}
+#content #content-skill .skill-container .skill .jqm{
+    width: 65%;
+}
+#content #content-skill .skill-container .skill .html{
+    width: 94%;
+}
+#content #content-skill .skill-container .skill .ext{
+    width: 43%;
+}
+#content #content-skill .skill-container .skill .php{
+    width: 20%;
+}
+#content #content-skill .skill-container .skill .sql{
+    width: 20%;
+}
+#content #content-skill .skill-container .skill .http{
+    width: 65%;
+}
+#content #content-skill .skill-container .skill .html{
+    width: 94%;
+}
+#content #content-skill .skill-container .skill .storm{
+    width: 90%;
+}
+#content #content-skill .skill-container .skill .svn{
+    width: 70%;
+}
+#content #content-skill .skill-container .skill .axu{
+    width: 60%;
+}
+#content #content-skill .skill-container .skill .ps{
+    width: 30%;
+}
+#content #content-skill .skill-container .skill s{
+    color:#fff;
+   /* height: 100%;*/
+    padding: 0 20px;
+    background:#ff4343 ;
+    display: inline-block;
+}
+#content #content-skill .skill-container .skill i{
+    color:#555;
+  /*  height: 100%;*/
+    position: absolute;
+    left: 350px;
+}
+#content .space{
+    height: 20px;
+    width: 100%;
+}
+
+/*工作经验*/
+#content #content-skill .skill-container .exp{
+    width:48%;
+    height: 100%;
+    float: right;
+    margin-left: 40px;
+}
+#content #content-skill .skill-container .exp>span{
+    display: block;
+    font-size: 22px;
+    color: #ff4343;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+#content #content-skill .skill-container .exp .exp-content .exp-top{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ff4343;
+    line-height: 40px;
+}
+#content #content-skill .skill-container .exp .exp-content .exp-top i{
+    position: relative;
+    color: #ff4343;
+    right:-120px;
+}
+#content #content-skill .skill-container .exp .exp-content .exp-top label{
+    color:#ff4343;
+    float: right;
+    font-weight: normal;
+}
+#content #content-skill .skill-container .exp .exp-content .exp-mid{
+    width: 100%;
+    color: #ff4343;
+    margin-top: 5px;
+}
+#content #content-skill .skill-container .exp .exp-content .exp-mid p{
+    color:#666;
+    margin-top: -3px;
+}
+#content #content-skill .skill-container .exp .exp-content .exp-mid ul li{
+    color: #666;
+    margin-top: -3px;
+}
+/*作品**/
+#content #content-works{
+    width:88%;
+    background: #f4f4f4;
+    height: 600px;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left:15px;
+    display: none;
+}
+#content #content-works .works-container{
+    padding: 0 20px;
+}
+#content #content-works .works-container .work-img{
+    position: relative;
+}
+#content #content-works .works-container s{
+    display: block;
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    bottom: -1060px;
+}
+#content #content-works .works-container .work-img ul li{
+    display: block;
+    width: 326px;
+    height: 506px;
+    background: #ff6f69;
+    margin-top: 10px;
+    float: left;
+}
+#content #content-works .works-container .work-img ul li img{
+    margin:3px;
+    width:320px;
+    height: 500px;
+}
+#content #content-works .works-container .work-img ul li div{
+    width:320px;
+    height: 0;
+    background: rgba(0,0,0,0.6);
+    color:#fff;
+    cursor:pointer;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+}
+#content #content-works .works-container .work-img ul li div h4{
+    margin-top: 40%;
+    font-size: 26px;
+}
+#content #content-works .works-container .work-img ul li div p{
+    margin-top: 5%;
+}
+#content #content-works .works-container .work-img ul li.jd-mark{
+    top:513px;
+    left: 43px;
+}
+#content #content-works .works-container .work-img ul li.intel-mark{
+    top:513px;
+    left: 379px;
+}
+#content #content-works .works-container .work-img ul li.game-mark{
+    top:1029px;
+    left: 43px;
+}
+#content #content-works .works-container .work-img ul li.p360-mark{
+    top:1029px;
+    left: 379px;
+}
+#content #content-works .works-container .work-img ul li.countdown-mark{
+    top:1029px;
+    left: 43px;
+}
+#content #content-works .works-container .work-img ul li.weibo-mark{
+    top:1029px;
+    left: 379px;
+}
